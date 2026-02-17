@@ -1,0 +1,135 @@
+:root {
+  --biblio-brown-dark: #322D29;
+  --biblio-red: #72383D;
+  --biblio-beige-dark: #AC9C8D;
+  --biblio-beige-light: #D1C7BD;
+  --biblio-white: #EFE9E1;
+  --biblio-gray: #D9D9D9;
+}
+
+body {
+  background-color: var(--biblio-white);
+  color: var(--biblio-brown-dark);
+  min-height: 100vh;
+  display: flex; flex-flow: column;
+
+}
+
+main{
+  display: flex;
+}
+
+.glass{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+form{
+  margin: 0.5rem;
+}
+
+.content-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.side-img{
+  width: 50%;
+  background-image: url('imgs/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-container{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  align-self: center;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: fit-content;
+  padding: 1.5rem;
+}
+
+.navbar-bibliotech {
+  background-color: var(--biblio-red);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-bibliotech .navbar-brand,
+.navbar-bibliotech .nav-link {
+  color: var(--biblio-white);
+  transition: all 0.3s;
+}
+.navbar-bibliotech .navbar-brand,
+.navbar-bibliotech .nav-link:hover{
+  transform: translateY(-2px);
+}
+.btn-restituisci{
+  background-color: var(--biblio-red);
+  color: var(--biblio-white);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  padding: 0.5rem;
+}
+.btn-dettagli{
+  border: 1px solid var(--biblio-beige-dark);
+  color: var(--biblio-brown-dark);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  padding: 0.5rem;
+}
+.btn-bibliotech {
+  background-color: var(--biblio-beige-dark);
+  color: var(--biblio-white);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  padding: 0.5rem;
+}
+
+.btn-bibliotech:hover {
+  background-color: var(--biblio-brown-dark);
+  color: var(--biblio-white);
+}
+
+.btn-container{
+  display: flex;
+  width: fit-content;
+  height: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.card-bibliotech {
+  border: 1px solid var(--biblio-beige-dark);
+}
+
+.card-bibliotech .card-header {
+  background-color: var(--biblio-beige-light);
+  color: var(--biblio-brown-dark);
+  border-bottom: 1px solid var(--biblio-beige-dark);
+}
+
+.footer-bibliotech {
+  margin-top: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: end;
+  background-color: var(--biblio-brown-dark);
+  color: var(--biblio-white);
+}
